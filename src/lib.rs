@@ -65,7 +65,7 @@ fn http_get(host: &str) -> Result<i64, Box<dyn Error>> {
         .timeout_write(Duration::from_secs(2))
         .build();
     if let Some(date) = agent
-        .head(&format!("http://{}", host))
+        .head(&format!("https://{}", host))
         .call()?
         .header("date")
     {
