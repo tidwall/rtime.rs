@@ -1,0 +1,18 @@
+[package]
+name = "rtime_rs"
+version = "0.1.2"
+authors = ["Josh Baker <joshbaker77@gmail.com>"]
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/tidwall/rtime.rs"
+documentation = "https://docs.rs/rtime_rs/"
+description = "Retrieve the current time from remote servers"
+
+[lib]
+doctest = false
+
+[dependencies]
+chrono = "0.4"
+lazy_static = "1.4"
+ureq = "2.4"
